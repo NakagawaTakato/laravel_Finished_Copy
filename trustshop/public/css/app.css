@@ -1,0 +1,638 @@
+.header {
+    width: 85%;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.header .header__hamburger {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.4s;
+    background-color: #305dff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px gray;
+    z-index: 20;
+}
+
+.header__hamburger span {
+    position: absolute;
+    left: 10px;
+    display: block;
+    height: 1px;
+    background-color: #fff;
+    transition: 0.8s;
+}
+
+.header__hamburger span:nth-of-type(1) {
+    width: 10px;
+    top: 13px;
+}
+
+.header__hamburger span:nth-of-type(2) {
+    width: 20px;
+    top: 20px;
+}
+
+.header__hamburger span:nth-of-type(3) {
+    width: 5px;
+    top: 27px;
+}
+
+.header__hamburger.active span:nth-of-type(1) {
+    width: 20px;
+    top: 20px;
+    transform: rotate(45deg);
+}
+
+.header__hamburger.active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.header__hamburger.active span:nth-of-type(3) {
+    width: 20px;
+    top: 20px;
+    transform: rotate(-45deg);
+}
+
+.header__ttl {
+    font-size: 32px;
+    color: #305dff;
+    margin-left: 20px;
+}
+
+.menu {
+    display: none;
+}
+
+.menu.active {
+    display: block;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+    padding-top: 30vh;
+}
+
+.menu__item {
+    display: block;
+    color: #305dff;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* 認証 */
+.auth-card {
+    background: #ffffff;
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    margin-top: 100px;
+    box-shadow: 2px 2px 4px gray;
+}
+
+.auth-card__ttl {
+    background: #305dff;
+    border-radius: 5px 5px 0 0;
+    color: #ffffff;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.auth-card__item {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.auth-card__item__img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.auth-card__item__input {
+    width: 300px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    font-size: 16px;
+}
+
+.auth-card__btn {
+    text-align: right;
+    margin: 15px 30px 0 0;
+}
+
+.auth-card__btn input {
+    background: #305dff;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* サンクス */
+.thanks {
+    padding: 120px 100px 0;
+}
+
+.thanks-card {
+    background: #ffffff;
+    width: 450px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 100px;
+    box-shadow: 2px 2px 4px gray;
+    padding: 100px 0;
+    margin: 0 auto;
+}
+
+.thanks-card__txt {
+    font-size: 24px;
+    padding-bottom: 48px;
+}
+
+.thanks-card__link {
+    background: #305dff;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* ホーム */
+.shops {
+    width: calc(100vw - 200px);
+}
+
+.shop-card {
+    width: 300px;
+    height: 320px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px gray;
+    margin-bottom: 2%;
+}
+
+.shop-card__img,
+.shop-card__group__img {
+    width: 100%;
+    height: auto;
+}
+
+.shop-card__name {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.shop-card__registration {
+    color: white;
+    background-color: #305DFF;
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    border: none;
+    margin: 20px auto;
+    padding: 10px 10px;
+}
+
+.shop-card__name2 {
+    color: white;
+    background-color: #305DFF;
+    width: 150px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 10px 10px;
+}
+
+/* 編集 */
+.todo__alert--success {
+    padding: 10px 30px;
+    border-color: #badbcc;
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+.todo__alert--danger {
+    padding: 10px 0;
+    border-color: #f5c2c7;
+    background-color: #f8d7da;
+    color: #842029;
+}
+
+.todo__alert--danger ul {
+    margin: 0;
+}
+
+.make {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.make-form__item-input {
+    width: 300px;
+    height: 40px;
+    background: transparent;
+}
+
+.make-form__button-submit {
+    margin: 0px 10px;
+    margin-top: 50px;
+    width: 100px;
+    height: 40px;
+    color: #FFFFFF;
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+.edit__group-form__name {
+    width: 500px;
+    background: transparent;
+    border: none;
+}
+
+.edit__group-form__shop {
+    width: 500px;
+    background: transparent;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.edit__group-form__update {
+    margin: 0px 10px;
+    width: 100px;
+    height: 40px;
+    color: #FFFFFF;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+}
+
+.edit__group-form__destroy {
+    margin: 0px 10px;
+    width: 100px;
+    height: 40px;
+    color: #FFFFFF;
+    background-color: #FF0000;
+    border: none;
+    border-radius: 5px;
+}
+
+.edit__group td {
+    border-bottom: 1px solid #757575;
+    padding: 10px 0;
+}
+
+.edit__group tr {
+    height: 40px;
+}
+
+.edit__group-form__td {
+    width: 100px;
+}
+
+/* マイページ */
+.shop-cardTwo {
+    width: 300px;
+    height: 390px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px gray;
+    margin-bottom: 2%;
+}
+
+.detail-name {
+    margin: -40px 0px 40px 0px;
+    font-size: 32px;
+    color: #305dff;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #305dff;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.detail-explanation {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.shop-card__text {
+    text-align: center;
+}
+
+.shop-card__get {
+    display: block;
+    margin-left: auto;
+    color: #ffffff;
+    background-color: #305dff;
+}
+
+.shop-card__group {
+    position: relative;
+}
+
+.shop-card__group__soldout {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.shop-card__group__soldout {
+    color: #ffffff;
+    opacity: 0.6;
+}
+
+.shop-card__group__soldout__span {
+    padding: 10px 40px;
+    background-color: #FF0000;
+    border-radius: 5px;
+}
+
+.shop-card__button {
+    color: #ffffff;
+    background-color: #000000;
+    position: relative;
+    left: 81%;
+}
+
+.shop-card__get:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.shop-card__button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.edit__group__tr__td {
+    width: 500px;
+}
+
+/* モーダル */
+.shop-card__area {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 0px 30px;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.shop-card__modal {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    /* モーダルの位置を中央に固定 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* モーダルの最大幅と高さを設定 */
+    max-width: 80%;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.shop-card__modal__inner {
+    max-width: 600px;
+    margin: 0 auto;
+    /* 内部コンテンツを中央揃え */
+    text-align: center;
+}
+
+.shop-card__modal__inner__text {
+    margin: 20px 0;
+    line-height: 1.8;
+    /* テキストの左右の余白を追加 */
+    padding: 0 20px;
+    /* テキストを読みやすく整形 */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.shop-card__modal::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.shop-card__modal__inner__close.btn {
+    display: block;
+    margin: 20px auto 0;
+    padding: 8px 16px;
+    background: #305dff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* お気に入り */
+.form__button {
+    margin: 30px 240px 0px 0px;
+    display: block;
+    margin-left: auto;
+    color: #ffffff;
+    background-color: #305dff;
+}
+
+/* 商品詳細 */
+.merchandise-detail__title {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.merchandise-detail__name {
+    margin: 20px 0px;
+}
+
+.merchandise-detail__description {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 2em;
+    background: linear-gradient(transparent 95%, #ccc 95%);
+    background-size: 100% 2em;
+    padding: 0;
+    /* 以下の3つのプロパティを追加 */
+    white-space: pre-wrap;
+    /* 改行を保持 */
+    word-wrap: break-word;
+    /* 長い単語を折り返す */
+    overflow-wrap: break-word;
+}
+
+.merchandise-detail__description {
+    background: linear-gradient(transparent 97%, #ccc 97%);
+    background-size: 100% 2em;
+    line-height: 2em;
+}
+
+.merchandise-detail__title {}
+
+.merchandise-detail__name {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.merchandise-detail__description {}
+
+.merchandise-detail__content {}
+
+.merchandise-detail__content {}
+
+.return__button {
+    position: relative;
+    top: 30px;
+    left: 72%;
+    width: 80px;
+    height: 20px;
+    color: #ffffff;
+    background-color: #305dff;
+    text-decoration: none;
+    border: 2px solid #000000;
+}
+
+/* 商品編集 */
+.make-form__button-create {
+    width: 100px;
+    height: 40px;
+    color: #FFFFFF;
+    background-color: #0000FF;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.make-title {
+    position: relative;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.edit__group-form__button {
+    margin: 0px 10px;
+    width: 100px;
+    height: 40px;
+    color: #FFFFFF;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+}
+
+/* 商品作成 */
+.make-form__group__name {
+    margin: 10px 0px;
+}
+
+.make-form__group__name__input {
+    width: 840px;
+}
+
+.make-form__group__error {
+    margin-left: 50%;
+    color: #FF0000;
+}
+
+.make-form__group__nameTextArea {
+    display: flex;
+    align-items: flex-start;
+}
+
+.make-form__group__name__InputThree {
+    width: 840px;
+}
+
+.make-form__group__name__InputFour {
+    width: 840px;
+    margin-bottom: 10px;
+}
+
+.make-form__group__button {
+    margin-left: 95%;
+    margin-top: 10px;
+    color: #ffffff;
+    background-color: #305dff;
+}
+
+.error {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+/* プロフィール */
+.form-check {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.form-check-input {
+    margin-right: 10px;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+}
+
+.form-check-label {
+    color: #305dff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.auth-card__profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0;
+    padding: 0 20px;
+}
+
+.auth-card__profile__text {
+    margin: 0;
+    font-size: 16px;
+}
